@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GlobalTadka")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+144c3c570d9afee3fbe04721fb551e91c817bddf")]
 [assembly: System.Reflection.AssemblyProductAttribute("GlobalTadka")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GlobalTadka")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,29 +6,30 @@
 
 <h1>Ingredients</h1>
 
-<a asp-action="Create">Create New Ingredient</a>
+<a asp-action="Create" class="btn btn-primary">Create New Ingredient</a>
+
 <table class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
+            <th>Actions</th> <!-- Added Actions header -->
         </tr>
     </thead>
     <tbody>
-        @foreach(Ingredient i in Model)
+        @foreach (Ingredient i in Model)
         {
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => i.Name)
                 </td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@i.IngredientId">Details</a>
-                    <a asp-action="Edit" asp-route-id="@i.IngredientId">Edit</a>
-                    <a asp-action="Delete" asp-route-id="@i.IngredientId">Delete</a>
+                    <a asp-action="Details" asp-route-id="@i.IngredientId" class="btn-action">Details</a>
+                    <a asp-action="Edit" asp-route-id="@i.IngredientId" class="btn-action">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@i.IngredientId" class="btn-action">Delete</a>
                 </td>
             </tr>
         }
-        
     </tbody>
 </table>
