@@ -3,6 +3,7 @@ using GlobalTadka.Models;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,8 @@ builder.Services.Configure<FormOptions>(options =>
 {
     options.MultipartBodyLengthLimit = 52428800; // 50MB
 });
+
+StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
 
 // Add MVC and Razor Pages support

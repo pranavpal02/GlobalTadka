@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C8GQlggV299ENuO4iOGutcDGWLaI0TxjBFVdr0H8WpI=",
+  "Hash": "svxwNSLOND2oXmvqgxfJst7l+bN6Jwqq+GEtCSsu4bs=",
   "Source": "GlobalTadka",
   "BasePath": "_content/GlobalTadka",
   "Mode": "Default",
@@ -1307,6 +1307,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\7689c450-459c-441c-8b52-f79522f14c82_mangomilkshake.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lekh0\\source\\repos\\GlobalTadka\\GlobalTadka\\wwwroot\\images\\a8fe91d9-6c23-48f1-ae6d-7b42b4c22765_fries.jpg",
+      "SourceId": "GlobalTadka",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lekh0\\source\\repos\\GlobalTadka\\GlobalTadka\\wwwroot\\",
+      "BasePath": "_content/GlobalTadka",
+      "RelativePath": "images/a8fe91d9-6c23-48f1-ae6d-7b42b4c22765_fries.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a8fe91d9-6c23-48f1-ae6d-7b42b4c22765_fries.jpg"
     },
     {
       "Identity": "C:\\Users\\lekh0\\source\\repos\\GlobalTadka\\GlobalTadka\\wwwroot\\images\\ae56f3e7-e558-4457-b653-0726e840f801_lassi.jpg",

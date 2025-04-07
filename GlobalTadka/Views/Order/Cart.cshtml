@@ -1,37 +1,37 @@
 ﻿@model OrderViewModel
 <h1>My Cart</h1>
 
-<!--Form to finalize and create the order-->
-<form asp-action="PlaceOrder" method="post">
-    <h3>Order Items</h3>
-    <table class="table table-bordered">
-        <thead>
+<h3>Order Items</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.OrderItems.Count; i++)
+        {
+            var itemTotal = Model.OrderItems[i].Quantity * Model.OrderItems[i].Price;
             <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
+                <td>@Model.OrderItems[i].ProductName</td>
+                <td>@Model.OrderItems[i].Quantity</td>
+                <td>@Model.OrderItems[i].Price.ToString("C")</td>
+                <td>@itemTotal.ToString("C")</td>
             </tr>
-        </thead>
-        <tbody>
-            @for (int i = 0; i < Model.OrderItems.Count; i++)
-            {
-                <tr>
-                    <td>@Model.OrderItems[i].ProductName</td>
-                    <td>@Model.OrderItems[i].Quantity</td>
-                    <td>@Model.OrderItems[i].Price</td>
-                    <td></td>
-                </tr>
-            }
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="bg-primary bg-gradient text-white fw-bold">@Model.TotalAmount.ToString("C")</td>
-            </tr>
-        </tbody>
-    </table>
+        }
+        <tr>
+            <td colspan="3" class="text-end fw-bold">Total:</td>
+            <td class="bg-primary bg-gradient text-white fw-bold">@Model.TotalAmount.ToString("C")</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Replace PlaceOrder form with Proceed to Payment -->
+<form asp-action="Checkout" method="post">
     <div class="form-group">
-        <input type="submit" value="Place Order" class="btn btn-primary" />
+        <input type="submit" value="Proceed to Payment" class="btn btn-success" />
     </div>
 </form>
